@@ -1,0 +1,29 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family:
+      Pretendard,
+      -apple-system,
+      Arial,
+      sans-serif;
+  }
+
+  body {
+    @apply bg-white pt-[70px] text-gray-700;
+  }
+
+  button {
+    @apply font-[inherit];
+  }
+
+  @media (max-width: 767px) {
+    body {
+      @apply pt-[60px];
+    }
+  }
+}
